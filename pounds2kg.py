@@ -1,9 +1,10 @@
-weight = input("Please Enter your weight: ")
+weight = int(input("Please Enter your weight: "))
 unit   = input('(L)bs or (K)g: ')
 if unit.upper()=="L":
     converted= weight * 0.45
-print(f "You are {converted} Kilos")
+    print(f"You are {converted} Pounds")
 else:
-    converted = weight / 0.45
+    converted = weight/0.45
+    print(f"You are {converted} Kilos")
 
 
